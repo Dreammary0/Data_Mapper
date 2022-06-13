@@ -1,0 +1,56 @@
+  <link href="icon.png" rel="icon" type="image/x-icon">  
+
+<form class="log" method="GET" action="">
+  <input name="id" type="text"  id="tx "placeholder="ID"/>
+  <input name="name" type="text" placeholder="Наименование"/>
+  <input name="tale" type="text" placeholder="Описание"/>
+  <input name="price" type="text" placeholder="Цена"/>
+  <input  class="botton" type="submit" name="add" value="Добавить"/>
+  <input  class="botton" type="submit" name="delete" value="Удалить"/>
+ </form>
+ 
+
+<style>
+ *, *::before, *::after {
+  box-sizing: content-box;
+}
+
+.log{
+  padding: 6px;
+  text-align: center; 
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+}
+
+input[type=text]{
+   width:250px;
+    height: 30px;
+    text-align: center;
+}
+
+.botton {border-radius: 4px; padding: 5px}
+.botton:hover {
+    background-color: #c83240; /* Red */
+    color: white;
+    
+   } 
+   
+  [data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */  
+   
+   
+   </style>

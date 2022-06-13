@@ -1,0 +1,44 @@
+  <link href="icon.png" rel="icon" type="image/x-icon">  
+
+ <form class="log" action="/" method="POST">
+        <label> Найти по ID:
+            <input name="id" type="text" placeholder="Введите ID">
+        </label>
+        <input class="botton" type="submit" value="Найти">
+    </form>
+
+ <form class="log" action="/" method="POST">
+        <label> Цена на кофе:
+            <input name="price" type="text" placeholder="Цена, дешевле которой ищете">
+        </label>
+        <input class="botton" type="submit" value="Найти">
+    </form>
+    <br>
+    
+<style>
+ *, *::before, *::after {
+  box-sizing: content-box;
+}
+
+.log{
+  padding: 6px;
+  text-align: center; 
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+}
+
+input[type=text]{
+   width:250px;
+    height: 30px;
+    text-align: center;
+}
+
+.botton {border-radius: 4px; padding: 5px}
+.botton:hover {
+    background-color: #c83240; /* Red */
+    color: white;
+    
+   } 
+   
+   </style>
